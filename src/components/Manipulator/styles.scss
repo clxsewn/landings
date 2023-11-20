@@ -1,0 +1,26 @@
+#manipulator {
+  width: 100%;
+  height: 42px;
+
+  display: flex;
+
+  border-bottom: 1px solid #252525;
+
+  .manipulator-btn {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
+

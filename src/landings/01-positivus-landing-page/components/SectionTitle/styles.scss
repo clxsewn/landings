@@ -1,0 +1,18 @@
+.section-title {
+  display: flex;
+  flex-direction: row;
+
+  gap: 40px;
+
+  .section-title__heading {
+    height: min-content;
+
+    padding: 0 10px;
+    margin-bottom: 40px;
+
+    font-weight: 600;
+
+    background-color: var(--green-color);
+    border-radius: var(--border-radius);
+  }
+}
