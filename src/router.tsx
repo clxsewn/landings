@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom'
-import LandingConstructor from './LandingConstructor.tsx'
+import LandingLayout from './LandingLayout.tsx'
 
 export const router = createBrowserRouter([
     {
@@ -8,7 +8,7 @@ export const router = createBrowserRouter([
     },
     {
         path: '/p/:id',
-        element: <LandingConstructor />,
+        element: <LandingLayout />,
     },
     {
         path: '*',

@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { pages } from './data.tsx'
 import { useEffect } from 'react'
 
-export default function LandingConstructor() {
+export default function LandingLayout() {
     const { id } = useParams()
     const navigate = useNavigate()
 

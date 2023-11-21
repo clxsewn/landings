@@ -25,10 +25,19 @@
   width: min(1240px, calc(100% - 40px));
 }
 
+.unselectable {
+  user-select: none;
+}
+
 #header {
+  height: 68px;
+
+  margin-top: 4px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
   #logo {
     display: flex;
@@ -36,6 +45,8 @@
     gap: 14px;
 
     align-items: center;
+
+    user-select: none;
 
     #logo__icon {
       width: 36px;
@@ -45,6 +56,30 @@
     #logo__text {
       font-size: 40px;
       font-weight: 600;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 40px;
+      font-size: 20px;
+
+      list-style: none;
+
+      li {
+        a {
+          color: #000;
+          text-decoration: none;
+
+          &.outlined {
+            padding: 20px 35px;
+
+            border: 1px solid #000;
+            border-radius: 14px;
+          }
+        }
+      }
     }
   }
 }

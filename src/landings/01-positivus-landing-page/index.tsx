@@ -16,22 +16,24 @@ export default function Landing1() {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="#about-us">About us</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a href="#services">Services</a>
                         </li>
                         <li>
-                            <a href="#">Use Cases</a>
+                            <a href="#case-studies">Use Cases</a>
                         </li>
                         <li>
-                            <a href="#">Pricing</a>
+                            <a href="#our-working-process">Pricing</a>
                         </li>
                         <li>
                             <a href="#">Blog</a>
                         </li>
                         <li>
-                            <a href="#">Request a quote</a>
+                            <a href="#contact-us" className="outlined">
+                                Request a quote
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -47,7 +49,11 @@ export default function Landing1() {
                     <button className="btn">Book a consulting</button>
                 </div>
                 <div id="about-us__right">
-                    <img src={illustration1} alt="Illustration" />
+                    <img
+                        src={illustration1}
+                        alt="Illustration"
+                        className="unselectable"
+                    />
                 </div>
             </section>
             <section id="services">
