@@ -1,6 +1,6 @@
-import Manipulator from './components/Manipulator'
+import Manipulator from '../components/Manipulator'
 import { useNavigate, useParams } from 'react-router-dom'
-import { pages } from './data.tsx'
+import { pages } from '../data.tsx'
 import { useEffect } from 'react'
 
 export default function LandingLayout() {

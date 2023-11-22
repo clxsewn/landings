@@ -1,27 +1,25 @@
 import './styles.scss'
 import { pagesNum, pagesPaths } from '../../data.tsx'
 import { Link } from 'react-router-dom'
+import { pathToLandings } from '../../router.tsx'
 
-function _gpp(id: number): string {
-    if (id >= pagesNum) return pagesPaths[0]
-    if (id < 0) return pagesPaths[pagesNum - 1]
-    return pagesPaths[id]
-}
-
-function getPagePath(id: number): string {
-    return `/p/${_gpp(id)}`
+function getPagePathById(id: number): string {
+    if (id >= pagesNum) return pathToLandings + pagesPaths[0]
+    if (id < 0) return pathToLandings + pagesPaths[pagesNum - 1]
+    return pathToLandings + pagesPaths[id]
 }
 
 export default function Manipulator({ id }: { id: string }) {
+    console.log(id)
     const number = pagesPaths.indexOf(id)
 
     return (
         <div id="manipulator">
-            <Link to={getPagePath(number - 1)} className="manipulator-btn">
+            <Link to={getPagePathById(number - 1)} className="manipulator-btn">
                 &lt;
             </Link>
             {number + 1} / {pagesNum}
-            <Link to={getPagePath(number + 1)} className="manipulator-btn">
+            <Link to={getPagePathById(number + 1)} className="manipulator-btn">
                 &gt;
             </Link>
         </div>

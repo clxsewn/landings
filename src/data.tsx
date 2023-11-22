@@ -12,7 +12,7 @@ interface Pages {
 
 export const pages: Pages = {
     'positivus-landing-page': {
-        title: 'Landing 1',
+        title: 'Positivus Landing Page',
         element: <Landing1 />,
     },
     'land-2': {
