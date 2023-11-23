@@ -88,6 +88,9 @@
 #about-us {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 70px;
 
   #about-us__left {
     width: 531px;

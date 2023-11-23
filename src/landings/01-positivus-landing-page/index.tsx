@@ -2,8 +2,9 @@ import './globals.scss'
 import './main.scss'
 import SectionTitle from './components/SectionTitle'
 
-import logo from '../01-positivus-landing-page/assets/logo.svg'
-import illustration1 from '../01-positivus-landing-page/assets/illustration-01.svg'
+import logo from './assets/logo.svg'
+import illustration1 from './assets/illustration-01.svg'
+import Companies from './components/Companies'
 
 export default function Landing1() {
     return (
@@ -56,6 +57,7 @@ export default function Landing1() {
                     />
                 </div>
             </section>
+            <Companies />
             <section id="services">
                 <SectionTitle
                     heading="Services"

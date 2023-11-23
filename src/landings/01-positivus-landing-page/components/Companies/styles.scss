@@ -1,0 +1,13 @@
+#companies {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 140px;
+
+  img {
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}

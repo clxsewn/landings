@@ -10,7 +10,6 @@ function getPagePathById(id: number): string {
 }
 
 export default function Manipulator({ id }: { id: string }) {
-    console.log(id)
     const number = pagesPaths.indexOf(id)
 
     return (

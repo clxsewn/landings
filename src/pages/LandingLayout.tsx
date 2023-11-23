@@ -8,8 +8,7 @@ export default function LandingLayout() {
     const navigate = useNavigate()
 
     useEffect(() => {
-        if (id && !(id in pages)) {
-            console.log('redirect')
+        if (!id || !(id in pages)) {
             navigate('/')
         }
     }, [])
