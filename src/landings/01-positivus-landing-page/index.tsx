@@ -4,6 +4,7 @@ import SectionTitle from './components/SectionTitle'
 
 import logo from './assets/logo.svg'
 import illustration1 from './assets/illustration-01.svg'
+import illustration2 from './assets/illustration-02.svg'
 import Companies from './components/Companies'
 
 export default function Landing1() {
@@ -64,7 +65,24 @@ export default function Landing1() {
                     subheading="At our digital marketing agency, we offer a range of services to help bussinesses grow and succeed online. These services include:"
                 />
             </section>
-            <section id="proposal"></section>
+            <section id="proposal">
+                <div id="proposal__left">
+                    <h3>Let's make this happen</h3>
+                    <p>
+                        Contact us today to learn more about how our digital
+                        marketing services can help your business grow and
+                        succeed online.
+                    </p>
+                    <button className="btn">Get your free proposal</button>
+                </div>
+                <div id="proposal__right">
+                    <img
+                        src={illustration2}
+                        alt="illustration"
+                        className="unselectable"
+                    />
+                </div>
+            </section>
             <section id="case-studies">
                 <SectionTitle
                     heading="Case&nbsp;Studies"

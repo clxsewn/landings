@@ -107,6 +107,33 @@
   }
 }
 
+#proposal {
+  margin-bottom: 140px;
+  display: flex;
+  border-radius: 45px;
+  background-color: var(--gray-color);
+  box-sizing: border-box;
+  padding: 0 60px;
+
+  #proposal__left {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding: 60px 0;
+  }
+
+  #proposal__right {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 500px);
+
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
 button:hover {
   cursor: pointer;
 }
