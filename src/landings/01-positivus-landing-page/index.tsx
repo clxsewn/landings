@@ -6,6 +6,8 @@ import logo from './assets/logo.svg'
 import illustration1 from './assets/illustration-01.svg'
 import illustration2 from './assets/illustration-02.svg'
 import Companies from './components/Companies'
+import { employees } from '@/01-positivus-landing-page/components/EmployeeCard/data.ts'
+import EmployeeCard from '@/01-positivus-landing-page/components/EmployeeCard'
 
 export default function Landing1() {
     return (
@@ -100,6 +102,11 @@ export default function Landing1() {
                     heading="Team"
                     subheading="Meet the skilled and experienced team behind our successful digital marketing strategies"
                 />
+                <div id="employee-list">
+                    {employees.map((e) => (
+                        <EmployeeCard {...e} />
+                    ))}
+                </div>
             </section>
             <section id="testimonials">
                 <SectionTitle
