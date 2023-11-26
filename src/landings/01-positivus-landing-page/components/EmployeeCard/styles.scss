@@ -1,6 +1,41 @@
 .employee {
   padding: 40px 35px;
 
-  border: 1px solid #000;
-  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  letter-spacing: -.2px;
+
+  .employee-main {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 20px;
+
+    .employee-main-left {
+      width: 103px;
+      height: 103px;
+      background-color: var(--green-color);
+      border-radius: 50%;
+    }
+
+    .employee-main-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+
+      .linkedin-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  hr {
+    background-color: #000;
+    border: none;
+    height: 1px;
+  }
 }

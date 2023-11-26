@@ -35,3 +35,44 @@ h4 {
 p {
   font-size: 18px;
 }
+
+.btn {
+  width: max-content;
+  padding: 20px 35px;
+
+  font-size: 20px;
+
+  background-color: var(--dark-color);
+  color: #fff;
+
+  border-radius: 14px;
+
+  border: none;
+
+  &:hover {
+    background-color: #333341;
+  }
+}
+
+.custom-border {
+  border: 1px solid #000;
+  border-bottom: 5px solid #000;
+  border-radius: 45px;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+#container {
+  margin: 0 auto;
+  width: min(1240px, calc(100% - 40px));
+}
+
+.unselectable {
+  user-select: none;
+}
+
+button:hover {
+  cursor: pointer;
+}

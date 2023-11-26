@@ -107,6 +107,9 @@ export default function Landing1() {
                         <EmployeeCard {...e} />
                     ))}
                 </div>
+                <div className="btn-wrapper">
+                    <button className="btn">See all team</button>
+                </div>
             </section>
             <section id="testimonials">
                 <SectionTitle
