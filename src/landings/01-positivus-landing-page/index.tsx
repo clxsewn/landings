@@ -6,8 +6,9 @@ import logo from './assets/logo.svg'
 import illustration1 from './assets/illustration-01.svg'
 import illustration2 from './assets/illustration-02.svg'
 import Companies from './components/Companies'
-import { employees } from '@/01-positivus-landing-page/components/EmployeeCard/data.ts'
-import EmployeeCard from '@/01-positivus-landing-page/components/EmployeeCard'
+import { employees } from './components/EmployeeCard/data.ts'
+import EmployeeCard from './components/EmployeeCard'
+import Services from './components/Services'
 
 export default function Landing1() {
     return (
@@ -66,6 +67,7 @@ export default function Landing1() {
                     heading="Services"
                     subheading="At our digital marketing agency, we offer a range of services to help bussinesses grow and succeed online. These services include:"
                 />
+                <Services />
             </section>
             <section id="proposal">
                 <div id="proposal__left">
