@@ -1,4 +1,45 @@
-.service {
-  width: 500px;
-  height: 200px;
+@mixin main-border {
+  border: 1px solid #000;
+  border-bottom: 5px solid #000;
+  border-radius: 45px;
+}
+
+#services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  .service {
+    padding: 50px;
+
+  }
+
+  .service-gray {
+    @include main-border;
+    background-color: var(--gray-color);
+  }
+
+  h3 {
+    border-radius: 7px;
+    padding: 7px;
+    line-height: 52px;
+    display: inline;
+
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .service-dark {
+    background-color: var(--dark-color);
+    border-radius: 45px;
+    
+    h3 {
+      background-color: #fff;
+    }
+  }
+
+  .service-green {
+    background-color: var(--green-color);
+    @include main-border;
+  }
 }

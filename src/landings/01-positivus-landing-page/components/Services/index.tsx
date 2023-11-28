@@ -4,9 +4,9 @@ import { servicesList } from './data.ts'
 
 export default function Services() {
     return (
-        <div>
+        <div id="services-list">
             {servicesList.map((s) => (
-                <ServicesItem {...s} />
+                <ServicesItem {...s} className="sad" />
             ))}
         </div>
     )

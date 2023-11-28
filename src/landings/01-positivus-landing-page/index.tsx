@@ -1,5 +1,5 @@
-import './globals.scss'
-import './main.scss'
+import './components/styles/globals.scss'
+import './components/styles/main.scss'
 import SectionTitle from './components/SectionTitle'
 
 import logo from './assets/logo.svg'
