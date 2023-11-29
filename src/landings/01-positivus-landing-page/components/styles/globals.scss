@@ -63,8 +63,20 @@ p {
   width: min(1240px, calc(100% - 40px));
 }
 
+.learn-more {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
 .unselectable {
+  user-drag: none;
+  -webkit-user-drag: none;
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 button:hover {

@@ -4,42 +4,87 @@
   border-radius: 45px;
 }
 
+@mixin arrow($circleColor, $pathColor) {
+  .arrow {
+    circle {
+      fill: $circleColor;
+    }
+
+    path {
+      fill: $pathColor;
+    }
+  }
+}
+
 #services-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 
+  margin-bottom: 110px;
+
   .service {
+    display: flex;
+    justify-content: space-between;
+    min-height: 310px;
     padding: 50px;
 
+    h3 {
+      border-radius: 7px;
+      padding: 7px;
+      line-height: 52px;
+      display: inline;
+
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    .bg-green {
+      background-color: var(--green-color);
+    }
+
+    .bg-white {
+      background-color: #fff;
+    }
+
+    .service__left {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service__right {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 210px;
+      }
+    }
   }
 
   .service-gray {
     @include main-border;
+    @include arrow(var(--dark-color), var(--green-color));
     background-color: var(--gray-color);
   }
 
-  h3 {
-    border-radius: 7px;
-    padding: 7px;
-    line-height: 52px;
-    display: inline;
-
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-  }
 
   .service-dark {
     background-color: var(--dark-color);
     border-radius: 45px;
-    
-    h3 {
-      background-color: #fff;
+
+    @include arrow(#fff, #000);
+
+    p {
+      color: #fff;
     }
   }
 
   .service-green {
-    background-color: var(--green-color);
     @include main-border;
+    @include arrow(var(--dark-color), var(--green-color));
+    background-color: var(--green-color);
   }
 }
