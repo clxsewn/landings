@@ -1,9 +1,3 @@
-@mixin main-border {
-  border: 1px solid #000;
-  border-bottom: 5px solid #000;
-  border-radius: 45px;
-}
-
 @mixin arrow($circleColor, $pathColor) {
   .arrow {
     circle {
@@ -65,7 +59,6 @@
   }
 
   .service-gray {
-    @include main-border;
     @include arrow(var(--dark-color), var(--green-color));
     background-color: var(--gray-color);
   }
@@ -83,7 +76,6 @@
   }
 
   .service-green {
-    @include main-border;
     @include arrow(var(--dark-color), var(--green-color));
     background-color: var(--green-color);
   }

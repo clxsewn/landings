@@ -11,13 +11,14 @@
     display: flex;
     position: relative;
     flex-direction: row;
-    gap: 20px;
+    gap: 28px;
 
     .employee-main-left {
-      width: 103px;
-      height: 103px;
-      background-color: var(--green-color);
-      border-radius: 50%;
+      img {
+        width: 98px;
+        height: 98px;
+        filter: drop-shadow(8px 5px 0 #231f20);
+      }
     }
 
     .employee-main-right {

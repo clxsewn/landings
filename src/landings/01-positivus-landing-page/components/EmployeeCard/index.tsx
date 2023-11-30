@@ -1,6 +1,8 @@
 import './styles.scss'
 import { TEmployee } from '../EmployeeCard/data.ts'
+
 import linkedinIcon from './../../assets/linkedin-icon.svg'
+import mask from './../../assets/photo-mask.svg'
 
 export default function EmployeeCard({
     name,
@@ -10,9 +12,11 @@ export default function EmployeeCard({
     linkedin,
 }: TEmployee) {
     return (
-        <div className="employee custom-border">
+        <div className="employee main-border">
             <div className="employee-main">
-                <div className="employee-main-left"></div>
+                <div className="employee-main-left">
+                    <img src={mask} alt="mask" />
+                </div>
                 <div className="employee-main-right">
                     <a href={linkedin} className="linkedin-wrapper">
                         <img src={linkedinIcon} alt="linkedin" />
