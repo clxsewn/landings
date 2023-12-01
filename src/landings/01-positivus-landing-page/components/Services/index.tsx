@@ -6,7 +6,7 @@ export default function Services() {
     return (
         <div id="services-list">
             {servicesList.map((s) => (
-                <ServicesItem {...s} className="sad" />
+                <ServicesItem {...s} />
             ))}
         </div>
     )

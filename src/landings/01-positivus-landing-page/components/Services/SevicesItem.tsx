@@ -13,8 +13,10 @@ export default function ServicesItem({
     mainTextBg,
     imgSrc,
 }: IServicesItemProps) {
+    const borderClass = type !== 'dark' ? ' main-border' : ''
+
     return (
-        <div className={`service service-${type} custom-border`}>
+        <div className={`service service-${type}${borderClass}`}>
             <div className="service__left">
                 <span>
                     <h3 className={`bg-${mainTextBg}`}>{text}</h3>

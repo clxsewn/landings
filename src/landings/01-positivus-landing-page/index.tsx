@@ -1,5 +1,5 @@
-import './components/styles/globals.scss'
-import './components/styles/main.scss'
+import '@/01-positivus-landing-page/styles/globals.scss'
+import '@/01-positivus-landing-page/styles/main.scss'
 import SectionTitle from './components/SectionTitle'
 
 import logo from './assets/logo.svg'
