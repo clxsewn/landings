@@ -9,6 +9,7 @@ import Companies from './components/Companies'
 import { employees } from './components/EmployeeCard/data.ts'
 import EmployeeCard from './components/EmployeeCard'
 import Services from './components/Services'
+import Steps from '@/01-positivus-landing-page/components/Steps'
 
 export default function Landing1() {
     return (
@@ -98,6 +99,7 @@ export default function Landing1() {
                     heading="Our&nbsp;Working&nbsp;Process"
                     subheading="Step-by-Step Guide to Achieving Your Business Goals"
                 />
+                <Steps />
             </section>
             <section id="team">
                 <SectionTitle
