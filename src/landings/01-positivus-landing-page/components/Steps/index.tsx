@@ -1,5 +1,5 @@
 import { steps } from './data.ts'
-import StepsItem from '@/01-positivus-landing-page/components/Steps/StepsItem.tsx'
+import StepsItem from './StepsItem.tsx'
 
 export default function Steps() {
     return (
