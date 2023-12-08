@@ -118,3 +118,34 @@
     justify-content: end;
   }
 }
+
+footer {
+  padding: 55px 60px 50px;
+  background-color: var(--dark-color);
+
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+
+  #footer-top {
+    display: flex;
+    justify-content: space-between;
+
+    nav#footer-nav {
+      display: flex;
+      gap: 40px;
+
+      a {
+        color: #fff;
+
+        &:visited {
+          color: #fff;
+        }
+      }
+    }
+
+    #footer-links {
+      display: flex;
+      gap: 20px
+    }
+  }
+}

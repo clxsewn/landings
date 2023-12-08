@@ -1,5 +1,5 @@
-import '@/01-positivus-landing-page/styles/globals.scss'
-import '@/01-positivus-landing-page/styles/main.scss'
+import './styles/globals.scss'
+import './styles/main.scss'
 import SectionTitle from './components/SectionTitle'
 
 import logo from './assets/logo.svg'
@@ -9,7 +9,7 @@ import Companies from './components/Companies'
 import { employees } from './components/EmployeeCard/data.ts'
 import EmployeeCard from './components/EmployeeCard'
 import Services from './components/Services'
-import Steps from '@/01-positivus-landing-page/components/Steps'
+import Steps from './components/Steps'
 
 export default function Landing1() {
     return (
@@ -127,7 +127,23 @@ export default function Landing1() {
                     subheading="Connect with Us: Let's Discuss Your Digital Marketing Needs"
                 />
             </section>
-            <footer></footer>
+            <footer>
+                <div id="footer-top">
+                    <div id="footer-logo">Positivus</div>
+                    <nav id="footer-nav">
+                        <a href="#about-us">About us</a>
+                        <a href="#services">Services</a>
+                        <a href="#case-studies">Use Cases</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#">Blog</a>
+                    </nav>
+                    <div id="footer-links">
+                        <a href="#">in</a>
+                        <a href="#">f</a>
+                        <a href="#">twit</a>
+                    </div>
+                </div>
+            </footer>
         </div>
     )
 }
