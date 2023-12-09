@@ -143,6 +143,27 @@ export default function Landing1() {
                         <a href="#">twit</a>
                     </div>
                 </div>
+                <div id="footer-middle">
+                    <div id="footer-contacts-wrapper">
+                        <h4 className="bgc-green">Contact&nbsp;us</h4>
+                        <div id="contact-info">
+                            <a href="mailto:info@positivus.com">
+                                <p>Email: info@positivus.com</p>
+                            </a>
+                            <a href="tel:+555-567-8901">
+                                <p>Phone: 555-567-8901</p>
+                            </a>
+                            <p>
+                                Address: 1234 Main St
+                                <br />
+                                Moonstone City, Stardust State 12345
+                            </p>
+                        </div>
+                    </div>
+                    <div id="subscription"></div>
+                </div>
+                <hr />
+                <div id="footer-bottom"></div>
             </footer>
         </div>
     )

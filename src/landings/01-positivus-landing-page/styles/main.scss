@@ -148,4 +148,20 @@ footer {
       gap: 20px
     }
   }
+
+  #footer-middle {
+    #footer-contacts-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 27px;
+
+      #contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        color: #fff;
+      }
+    }
+  }
 }

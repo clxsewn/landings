@@ -64,6 +64,14 @@ p {
   width: min(1240px, calc(100% - 40px));
 }
 
+.bgc-green {
+  width: min-content;
+  padding: 7px;
+  background-color: var(--green-color);
+  border-radius: 10px;
+  color: #000;
+}
+
 .learn-more {
   display: flex;
   flex-direction: row;
