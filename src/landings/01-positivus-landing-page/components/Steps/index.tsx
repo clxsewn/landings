@@ -5,7 +5,7 @@ export default function Steps() {
     return (
         <div>
             {steps.map((s) => (
-                <StepsItem {...s} />
+                <StepsItem key={s.id} {...s} />
             ))}
         </div>
     )

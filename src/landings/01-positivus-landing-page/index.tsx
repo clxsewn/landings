@@ -108,7 +108,7 @@ export default function Landing1() {
                 />
                 <div id="employee-list">
                     {employees.map((e) => (
-                        <EmployeeCard {...e} />
+                        <EmployeeCard key={e.name} {...e} />
                     ))}
                 </div>
                 <div className="btn-wrapper">
