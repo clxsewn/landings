@@ -87,3 +87,33 @@
     background-color: var(--green-color);
   }
 }
+
+@keyframes arrowAnim {
+  48% {
+    transform: translate(40px, -30px);
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate(-30px, 40px);
+  }
+
+  51% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.learn-more:hover {
+  cursor: pointer;
+  
+  svg path {
+    animation: .43s ease-in-out arrowAnim;
+  }
+}

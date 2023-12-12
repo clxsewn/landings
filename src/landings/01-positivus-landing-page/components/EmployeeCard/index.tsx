@@ -17,6 +17,7 @@ export default function EmployeeCard({
                 <div className="employee-main-left">
                     <img src={mask} alt="mask" />
                 </div>
+                y
                 <div className="employee-main-right">
                     <a href={linkedin} className="linkedin-wrapper">
                         <img src={linkedinIcon} alt="linkedin" />
