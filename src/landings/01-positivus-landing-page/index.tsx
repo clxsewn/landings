@@ -6,10 +6,11 @@ import logo from './assets/logo.svg'
 import illustration1 from './assets/illustration-01.svg'
 import illustration2 from './assets/illustration-02.svg'
 import Companies from './components/Companies'
-import { employees } from './components/EmployeeCard/data.ts'
-import EmployeeCard from './components/EmployeeCard'
+import { employees } from '@/01-positivus-landing-page/components/Employees/data.ts'
+import EmployeeCard from './components/Employees/EmployeeCard.tsx'
 import Services from './components/Services'
 import Steps from './components/Steps'
+import Employees from '@/01-positivus-landing-page/components/Employees'
 
 export default function Landing1() {
     return (
@@ -106,11 +107,7 @@ export default function Landing1() {
                     heading="Team"
                     subheading="Meet the skilled and experienced team behind our successful digital marketing strategies"
                 />
-                <div id="employee-list">
-                    {employees.map((e) => (
-                        <EmployeeCard key={e.name} {...e} />
-                    ))}
-                </div>
+                <Employees />
                 <div className="btn-wrapper">
                     <button className="btn">See all team</button>
                 </div>

@@ -1,5 +1,4 @@
-import './styles.scss'
-import { TEmployee } from '../EmployeeCard/data.ts'
+import { TEmployee } from './data.ts'
 
 import linkedinIcon from './../../assets/linkedin-icon.svg'
 import mask from './../../assets/photo-mask.svg'
@@ -17,7 +16,6 @@ export default function EmployeeCard({
                 <div className="employee-main-left">
                     <img src={mask} alt="mask" />
                 </div>
-                y
                 <div className="employee-main-right">
                     <a href={linkedin} className="linkedin-wrapper">
                         <img src={linkedinIcon} alt="linkedin" />

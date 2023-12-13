@@ -1,0 +1,50 @@
+.employees-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+
+  .employee {
+    padding: 40px 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    letter-spacing: -.2px;
+
+    .employee-main {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      gap: 28px;
+
+      .employee-main-left {
+        img {
+          width: 98px;
+          height: 98px;
+          filter: drop-shadow(8px 5px 0 #231f20);
+        }
+      }
+
+      .employee-main-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        .linkedin-wrapper {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+
+    hr {
+      background-color: #000;
+      border: none;
+      height: 1px;
+    }
+  }
+}
