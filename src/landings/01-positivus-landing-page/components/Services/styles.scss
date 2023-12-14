@@ -11,16 +11,22 @@
 }
 
 #services-list {
+  width: 100%;
+
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+
   gap: 40px;
 
   margin-bottom: 110px;
 
   .service {
+    max-width: 600px;
+    min-height: 310px;
+
+    justify-self: center;
     display: flex;
     justify-content: space-between;
-    min-height: 310px;
     padding: 50px;
 
     transition: all .1s;

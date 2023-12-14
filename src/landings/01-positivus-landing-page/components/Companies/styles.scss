@@ -5,6 +5,7 @@
 
   img {
     filter: grayscale(100%);
+    transition: .15s all;
 
     &:hover {
       filter: grayscale(0);
