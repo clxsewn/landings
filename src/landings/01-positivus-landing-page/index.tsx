@@ -23,13 +23,13 @@ export default function Landing1() {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#about-us">About us</a>
+                            <a href="#about-us">About&nbsp;us</a>
                         </li>
                         <li>
                             <a href="#services">Services</a>
                         </li>
                         <li>
-                            <a href="#case-studies">Use Cases</a>
+                            <a href="#case-studies">Use&nbsp;Cases</a>
                         </li>
                         <li>
                             <a href="#our-working-process">Pricing</a>
@@ -39,7 +39,7 @@ export default function Landing1() {
                         </li>
                         <li>
                             <a href="#contact-us" className="outlined">
-                                Request a quote
+                                Request&nbsp;a&nbsp;quote
                             </a>
                         </li>
                     </ul>
