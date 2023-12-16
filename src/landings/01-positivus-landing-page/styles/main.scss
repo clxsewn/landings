@@ -145,7 +145,13 @@ footer {
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
 
+  * {
+    color: #fff;
+  }
+
   #footer-top {
+    margin-bottom: 70px;
+
     display: flex;
     justify-content: space-between;
 
@@ -154,8 +160,6 @@ footer {
       gap: 40px;
 
       a {
-        color: #fff;
-
         &:visited {
           color: #fff;
         }
@@ -169,6 +173,10 @@ footer {
   }
 
   #footer-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     #footer-contacts-wrapper {
       display: flex;
       flex-direction: column;
@@ -179,8 +187,56 @@ footer {
         flex-direction: column;
         gap: 20px;
 
-        color: #fff;
+        a {
+          text-decoration: none;
+        }
       }
     }
+
+    #subscription-form {
+      padding: 58px 40px;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+
+      border-radius: 14px;
+      background-color: #292A32;
+
+      input {
+        height: min-content;
+        padding: 20px 35px;
+
+        border-radius: 14px;
+
+        &[type="email"] {
+          color: #fff;
+          font-size: 20px;
+          border: 1px solid #fff;
+          background-color: transparent;
+        }
+
+        &[type="submit"] {
+          color: #000;
+          font-size: 20px;
+          background-color: var(--green-color);
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    margin: 50px 0;
+  }
+
+  #footer-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
   }
 }

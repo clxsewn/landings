@@ -157,10 +157,16 @@ export default function Landing1() {
                             </p>
                         </div>
                     </div>
-                    <div id="subscription"></div>
+                    <div id="subscription-form">
+                        <input type="email" placeholder="Email" />
+                        <input type="submit" value="Subscribe on news" />
+                    </div>
                 </div>
                 <hr />
-                <div id="footer-bottom"></div>
+                <div id="footer-bottom">
+                    <span>© 2023 Positivus. All Rights Reserved.</span>
+                    <a>Privacy Policy</a>
+                </div>
             </footer>
         </div>
     )
