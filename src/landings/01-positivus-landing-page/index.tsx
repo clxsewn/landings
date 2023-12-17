@@ -1,16 +1,19 @@
 import './styles/globals.scss'
 import './styles/main.scss'
-import SectionTitle from './components/SectionTitle'
 
 import logo from './assets/logo.svg'
 import illustration1 from './assets/illustration-01.svg'
 import illustration2 from './assets/illustration-02.svg'
+import logow from './assets/footer/logo-white.svg'
+import linkedinIcon from './assets/footer/linkedin.svg'
+import facebookIcon from './assets/footer/facebook.svg'
+import twitterIcon from './assets/footer/twitter.svg'
+
+import SectionTitle from './components/SectionTitle'
 import Companies from './components/Companies'
-import { employees } from '@/01-positivus-landing-page/components/Employees/data.ts'
-import EmployeeCard from './components/Employees/EmployeeCard.tsx'
 import Services from './components/Services'
 import Steps from './components/Steps'
-import Employees from '@/01-positivus-landing-page/components/Employees'
+import Employees from './components/Employees'
 
 export default function Landing1() {
     return (
@@ -126,7 +129,12 @@ export default function Landing1() {
             </section>
             <footer>
                 <div id="footer-top">
-                    <div id="footer-logo">Positivus</div>
+                    <img
+                        id="footer-logo"
+                        className="unselectable"
+                        src={logow}
+                        alt="Positivus"
+                    />
                     <nav id="footer-nav">
                         <a href="#about-us">About us</a>
                         <a href="#services">Services</a>
@@ -135,9 +143,27 @@ export default function Landing1() {
                         <a href="#">Blog</a>
                     </nav>
                     <div id="footer-links">
-                        <a href="#">in</a>
-                        <a href="#">f</a>
-                        <a href="#">twit</a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img
+                                className="unselectable"
+                                src={linkedinIcon}
+                                alt="linkedin"
+                            />
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img
+                                className="unselectable"
+                                src={facebookIcon}
+                                alt="facebook"
+                            />
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <img
+                                className="unselectable"
+                                src={twitterIcon}
+                                alt="twitter"
+                            />
+                        </a>
                     </div>
                 </div>
                 <div id="footer-middle">
@@ -165,7 +191,7 @@ export default function Landing1() {
                 <hr />
                 <div id="footer-bottom">
                     <span>© 2023 Positivus. All Rights Reserved.</span>
-                    <a>Privacy Policy</a>
+                    <a href="#">Privacy Policy</a>
                 </div>
             </footer>
         </div>
