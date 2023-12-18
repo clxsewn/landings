@@ -197,9 +197,17 @@ footer {
         flex-direction: column;
         gap: 20px;
 
-        a {
+        * {
           text-decoration: none;
+
+          @media screen and (max-width: 1100px) {
+            text-align: center;
+          }
         }
+      }
+
+      @media screen and (max-width: 1100px) {
+        align-items: center;
       }
     }
 
@@ -237,6 +245,11 @@ footer {
           }
         }
       }
+    }
+
+    @media screen and (max-width: 1100px) {
+      gap: 37px;
+      flex-direction: column;
     }
   }
 
