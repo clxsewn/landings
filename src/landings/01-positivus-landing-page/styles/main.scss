@@ -105,6 +105,7 @@
 #proposal {
   margin-bottom: 140px;
   display: flex;
+  justify-content: space-between;
   border-radius: 45px;
   background-color: var(--gray-color);
   box-sizing: border-box;
@@ -112,6 +113,7 @@
 
   #proposal__left {
     width: 500px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     gap: 26px;
@@ -121,9 +123,9 @@
   #proposal__right {
     display: flex;
     justify-content: center;
-    width: calc(100% - 500px);
 
     img {
+      width: 100%;
       transform: scale(1.1);
     }
   }
