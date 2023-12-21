@@ -158,12 +158,25 @@ footer {
     justify-content: space-between;
 
     @media screen and (max-width: 840px) {
+      align-items: center;
       flex-direction: column;
+      margin-bottom: 37px;
+    }
+
+    #footer-logo {
+      width: 180px;
+      margin-bottom: 37px;
     }
 
     nav#footer-nav {
       display: flex;
       gap: 40px;
+
+      @media screen and (max-width: 840px) {
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+      }
 
       a {
         &:visited {
@@ -231,6 +244,10 @@ footer {
 
       border-radius: 14px;
       background-color: #292A32;
+
+      @media screen and (max-width: 850px) {
+        flex-direction: column;
+      }
 
       input {
         height: min-content;
