@@ -98,7 +98,13 @@
   }
 
   #about-us__right {
+    display: flex;
+    justify-content: center;
     flex-shrink: 3;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -250,6 +256,7 @@ footer {
       }
 
       input {
+        max-width: 100%;
         height: min-content;
         padding: 20px 35px;
 
