@@ -34,6 +34,7 @@
     width: 100%;
 
     ul {
+      width: min-content;
       display: flex;
       gap: 40px;
       font-size: 20px;
@@ -78,6 +79,10 @@
         }
       }
     }
+  }
+
+  #burger-menu {
+    display: none;
   }
 }
 
