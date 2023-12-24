@@ -26,28 +26,14 @@ export default function Landing1() {
                     <div id="logo__text">Positivus</div>
                 </div>
                 <nav>
-                    <ul>
-                        <li>
-                            <a href="#about-us">About&nbsp;us</a>
-                        </li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li>
-                            <a href="#case-studies">Use&nbsp;Cases</a>
-                        </li>
-                        <li>
-                            <a href="#our-working-process">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#contact-us" className="outlined">
-                                Request&nbsp;a&nbsp;quote
-                            </a>
-                        </li>
-                    </ul>
+                    <a href="#about-us">About&nbsp;us</a>
+                    <a href="#services">Services</a>
+                    <a href="#case-studies">Use&nbsp;Cases</a>
+                    <a href="#our-working-process">Pricing</a>
+                    <a href="#">Blog</a>
+                    <a href="#contact-us" className="outlined">
+                        Request&nbsp;a&nbsp;quote
+                    </a>
                 </nav>
                 <button id="burger-menu">
                     <img src={burgerMenu} alt="menu" />
