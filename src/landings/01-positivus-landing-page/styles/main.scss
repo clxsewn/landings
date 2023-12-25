@@ -102,28 +102,63 @@ header#header {
 }
 
 #about-us {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   justify-content: space-between;
 
   margin-bottom: 70px;
 
-  #about-us__left {
-    width: 531px;
-    flex-shrink: 0;
+  grid-template-columns: 531px 1fr;
+  row-gap: 35px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
+  h1 {
+    grid-column: 1 / 2;
   }
 
-  #about-us__right {
-    display: flex;
-    justify-content: center;
-    flex-shrink: 3;
+  p {
+    grid-column: 1 / 2;
+  }
+
+  button {
+    grid-column: 1 / 2;
+
+    @media screen and (max-width: 630px) {
+      width: 100%;
+    }
+  }
+
+  img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+
+    justify-self: right;
+    align-self: center;
+
+    width: 100%;
+    max-width: 600px;
+  }
+
+  @media screen and (max-width: 850px) {
+    grid-template-columns: 1fr;
+
+    h1 {
+      grid-row: 1 / 2;
+    }
+
+    p {
+      grid-row: 3 / 4;
+    }
+
+    button {
+      grid-row: 4 / 5;
+    }
 
     img {
-      width: 100%;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+
+      justify-self: center;
+
+      max-width: 450px;
     }
   }
 }
