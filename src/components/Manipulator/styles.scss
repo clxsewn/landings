@@ -3,6 +3,8 @@
   height: 42px;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   border-bottom: 1px solid #252525;
 
@@ -17,6 +19,8 @@
     text-decoration: none;
 
     border-radius: 50%;
+
+    user-select: none;
 
     &:hover {
       background-color: #eee;
