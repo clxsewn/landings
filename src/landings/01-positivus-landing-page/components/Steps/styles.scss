@@ -1,3 +1,5 @@
+@use "@/01-positivus-landing-page/styles/breakpoints" as breakpoints;
+
 .steps-item {
   padding: 41px 60px;
   margin-bottom: 30px;
@@ -28,6 +30,10 @@
     .steps-item__number {
       font-size: 60px;
       font-weight: 600;
+
+      @include breakpoints.mobi {
+        font-size: 30px;
+      }
     }
 
     .steps-item__title {

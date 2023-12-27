@@ -2,7 +2,7 @@ import './styles/globals.scss'
 import './styles/main.scss'
 
 import logo from './assets/logo.svg'
-import burderMenu from './assets/burder-menu.svg'
+import burgerMenu from './assets/burder-menu.svg'
 import illustration1 from './assets/illustration-01.svg'
 import illustration2 from './assets/illustration-02.svg'
 import logow from './assets/footer/logo-white.svg'
@@ -15,7 +15,6 @@ import Companies from './components/Companies'
 import Services from './components/Services'
 import Steps from './components/Steps'
 import Employees from './components/Employees'
-import burgerMenu from '@/01-positivus-landing-page/assets/burder-menu.svg'
 
 export default function Landing1() {
     return (
