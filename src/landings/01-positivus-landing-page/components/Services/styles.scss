@@ -1,3 +1,5 @@
+@use '@/01-positivus-landing-page/styles/breakpoints' as bp;
+
 @mixin arrow($circleColor, $pathColor) {
   .arrow {
     circle {
