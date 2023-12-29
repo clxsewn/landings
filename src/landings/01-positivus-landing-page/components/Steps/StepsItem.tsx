@@ -1,8 +1,7 @@
+import { useState } from 'react'
 import { IStep } from './data.ts'
 import plus from '../../assets/plus.svg'
 import minus from '../../assets/minus.svg'
-import './styles.scss'
-import { useState } from 'react'
 
 export default function StepsItem({ id, title, text }: IStep) {
     const [visible, setVisibility] = useState(false)
