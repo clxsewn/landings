@@ -15,7 +15,7 @@ export default function ServicesItem({
 
     return (
         <div className={`service service-${type}${borderClass}`}>
-            <div>
+            <div className="heading-wrapper">
                 <h3 className={`bg-${mainTextBg}`}>{text}</h3>
             </div>
             <span className="learn-more">

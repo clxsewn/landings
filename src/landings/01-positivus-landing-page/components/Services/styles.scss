@@ -51,6 +51,14 @@
       cursor: pointer;
     }
 
+    .heading-wrapper {
+      max-width: 224px;
+
+      @include bp.mobi {
+        max-width: 200px;
+      }
+    }
+
     h3 {
       height: min-content;
       padding: 0 7px;
