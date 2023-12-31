@@ -1,22 +1,18 @@
 export interface IServicesItemProps {
     type: string
     text: string
-    mainTextBg: string
     imgSrc: string
 }
 
 export default function ServicesItem({
     type,
     text,
-    mainTextBg,
     imgSrc,
 }: IServicesItemProps) {
-    const borderClass = type !== 'dark' ? ' main-border' : ''
-
     return (
-        <div className={`service service-${type}${borderClass}`}>
+        <div className={`service service-${type}`}>
             <div className="heading-wrapper">
-                <h3 className={`bg-${mainTextBg}`}>{text}</h3>
+                <h3>{text}</h3>
             </div>
             <span className="learn-more">
                 <svg

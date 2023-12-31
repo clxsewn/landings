@@ -9,37 +9,31 @@ import img6 from '../../assets/services/06.png'
 export const servicesList: IServicesItemProps[] = [
     {
         type: 'gray',
-        mainTextBg: 'green',
         text: 'Search engine optimization',
         imgSrc: img1,
     },
     {
         type: 'green',
-        mainTextBg: 'white',
         text: 'Pay-per-click advertising',
         imgSrc: img2,
     },
     {
         type: 'dark',
-        mainTextBg: 'white',
         text: 'Social Media Marketing',
         imgSrc: img3,
     },
     {
         type: 'gray',
-        mainTextBg: 'green',
         text: 'Email Marketing',
         imgSrc: img4,
     },
     {
         type: 'green',
-        mainTextBg: 'white',
         text: 'Content Creation',
         imgSrc: img5,
     },
     {
         type: 'dark',
-        mainTextBg: 'green',
         text: 'Analytics and Tracking',
         imgSrc: img6,
     },

@@ -1,7 +1,23 @@
 @use '@/01-positivus-landing-page/styles/breakpoints' as bp;
 
-@mixin arrow($circleColor, $pathColor) {
-  .arrow {
+@mixin serviceTheme($bgColor, $headingColor, $headingBgColor, $circleColor, $pathColor, $border) {
+  background-color: $bgColor;
+
+  @if $border == true {
+    border: 1px solid #000;
+    border-bottom: 5px solid #000;
+  }
+
+  h3 {
+    color: $headingColor;
+    background-color: $headingBgColor;
+  }
+
+  .learn-more {
+    p {
+      color: $circleColor;
+    }
+
     circle {
       fill: $circleColor;
     }
@@ -35,14 +51,11 @@
     justify-content: space-between;
     padding: 50px;
 
+    border-radius: var(--border-radius);
     transition: all .1s;
 
     @include bp.mobi {
       grid-template-columns: 1fr 148px;
-
-      img {
-        width: 148px;
-      }
     }
 
     &:hover {
@@ -56,6 +69,9 @@
 
       @include bp.mobi {
         max-width: 200px;
+
+        grid-row: 1 / 2 !important;
+        grid-column: 1 / 3 !important;
       }
     }
 
@@ -84,6 +100,20 @@
       grid-row: 2 / 3;
 
       align-self: end;
+
+      &:hover {
+        cursor: pointer;
+
+        svg path {
+          animation: .43s ease-in-out arrowAnim;
+        }
+      }
+
+      @media only screen and (max-width: 460px) {
+        p {
+          display: none;
+        }
+      }
     }
 
     img {
@@ -91,37 +121,29 @@
       grid-row: 1 / 3;
 
       align-self: center;
+
+      @include bp.mobi {
+        width: 148px;
+        align-self: end;
+
+        grid-row: 2 / 3 !important;
+        grid-column: 2 / 3 !important;
+      }
     }
 
-    .bg-green {
-      background-color: var(--green-color);
+    // THEMES
+
+    &.service-green {
+      @include serviceTheme(var(--green-color), black, white, var(--dark-color), var(--green-color), true);
     }
 
-    .bg-white {
-      background-color: #fff;
+    &.service-gray {
+      @include serviceTheme(var(--gray-color), black, var(--green-color), var(--dark-color), var(--green-color), true);
     }
-  }
 
-  .service-gray {
-    @include arrow(var(--dark-color), var(--green-color));
-    background-color: var(--gray-color);
-  }
-
-
-  .service-dark {
-    background-color: var(--dark-color);
-    border-radius: 45px;
-
-    @include arrow(#fff, #000);
-
-    p {
-      color: #fff;
+    &.service-dark {
+      @include serviceTheme(var(--dark-color), black, white, white, black, false);
     }
-  }
-
-  .service-green {
-    @include arrow(var(--dark-color), var(--green-color));
-    background-color: var(--green-color);
   }
 }
 
@@ -144,13 +166,5 @@
 
   100% {
     transform: translate(0, 0);
-  }
-}
-
-.learn-more:hover {
-  cursor: pointer;
-  
-  svg path {
-    animation: .43s ease-in-out arrowAnim;
   }
 }
