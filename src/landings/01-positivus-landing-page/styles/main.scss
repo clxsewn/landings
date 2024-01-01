@@ -226,14 +226,25 @@ header#header {
 }
 
 footer {
-  padding: 55px 60px 50px;
+  width: var(--container-width);
+
+  padding: 55px 40px 50px;
+  margin: 0 auto;
+
   background-color: var(--dark-color);
 
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
 
-  * {
+  &, * {
+    transition: all .2s;
     color: #fff;
+  }
+
+  @include bp.mobi {
+    width: 100%;
+    border-radius: 0;
+    padding: 50px 0;
   }
 
   #footer-top {
@@ -241,6 +252,7 @@ footer {
 
     display: flex;
     justify-content: space-between;
+
 
     @media screen and (max-width: 840px) {
       align-items: center;
@@ -368,11 +380,21 @@ footer {
 
   hr {
     margin: 50px 0;
+
+    @include bp.mobi {
+      margin: 37px 0;
+    }
   }
 
   #footer-bottom {
     display: flex;
     flex-direction: row;
     gap: 40px;
+
+    @media only screen and (max-width: 620px) {
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+    }
   }
 }

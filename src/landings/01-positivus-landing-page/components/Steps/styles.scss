@@ -1,80 +1,103 @@
-@use "@/01-positivus-landing-page/styles/breakpoints" as breakpoints;
+@use "@/01-positivus-landing-page/styles/breakpoints" as bp;
 
-.steps-item {
-  padding: 41px 60px;
-  margin-bottom: 30px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+ol.steps-list {
+  counter-reset: count 0;
 
-  background-color: var(--gray-color);
-
-  transition: all .2s;
-  cursor: pointer;
-
-  .steps-item__top {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  &, * {
+    transition: all .2s;
   }
 
-  .steps-item__container {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
+  .steps-item-wrapper {
+    padding: 41px 60px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: min-content 1fr 58px;
+    row-gap: 30px;
+    column-gap: 25px;
     align-items: center;
 
-    .steps-item__number {
+    background-color: var(--gray-color);
+
+    counter-increment: count 1;
+
+    cursor: pointer;
+
+    @include bp.mobi {
+      margin-bottom: 20px;
+      grid-template-columns: min-content 1fr 30px;
+    }
+
+    &::before {
+      content: "0" counter(count);
+
+      font-family: 'Space Grotesk', sans-serif;
       font-size: 60px;
       font-weight: 600;
+      font-variant-numeric: normal;
 
-      @include breakpoints.mobi {
+      @include bp.mobi {
         font-size: 30px;
       }
     }
 
-    .steps-item__title {
+    span.steps-item__title {
       font-size: 30px;
-      font-weight: 600;
+      font-weight: 500;
+
+      @include bp.mobi {
+        font-size: 18px;
+      }
     }
-  }
 
-  &.revealed {
-    background-color: var(--green-color);
-  }
+    button {
+      width: 58px;
+      height: 58px;
 
-  button {
-    width: 58px;
-    height: 58px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
 
-    flex-shrink: 0;
+      border: 1px solid #000;
+      border-radius: 50%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      @include bp.mobi {
+        width: 30px;
+        height: 30px;
 
-    border: 1px solid #000;
-    border-radius: 50%;
-  }
+        img {
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
 
-  hr {
-    border: none;
-    height: 1px;
-    background-color: #000;
-  }
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #000;
 
-  hr, p {
-    display: none;
-  }
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+    }
 
-  &.opened {
-    background-color: var(--green-color);
+    p {
+      grid-column: 1 / 4;
+      grid-row: 3 / 4;
+    }
 
     hr, p {
-      display: block;
+      display: none;
+    }
+
+    &.opened {
+      background-color: var(--green-color);
+
+      hr, p {
+        display: block;
+      }
     }
   }
 }
