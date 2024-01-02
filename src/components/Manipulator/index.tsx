@@ -27,6 +27,7 @@ export default function Manipulator({ id }: { id: string }) {
 
     return (
         <div id="manipulator">
+            <Link to="/">All</Link>
             <Link
                 ref={leftArrow}
                 to={getPagePathById(number - 1)}
