@@ -1,9 +1,30 @@
 #companies {
   display: flex;
+  row-gap: 26px;
+  column-gap: 30px;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 140px;
 
+  @media screen and (max-width: 972px) {
+    justify-content: space-evenly;
+    column-gap: 70px;
+  }
+
+  @media screen and (max-width: 780px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 67px;
+  }
+
+  @media screen and (max-width: 530px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   img {
+    justify-self: center;
     filter: grayscale(100%);
     transition: .15s all;
 

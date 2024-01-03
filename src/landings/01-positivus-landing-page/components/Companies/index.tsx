@@ -9,7 +9,7 @@ import zoom from '../../assets/companies/zoom.svg'
 
 export default function Companies() {
     return (
-        <section id="companies" className="container">
+        <section id="companies">
             <img src={amazon} alt="amazon" />
             <img src={dribbble} alt="dribbble" />
             <img src={hubspot} alt="hubspot" />
