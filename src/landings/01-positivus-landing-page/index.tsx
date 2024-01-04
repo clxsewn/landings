@@ -15,6 +15,7 @@ import Companies from './components/Companies'
 import Services from './components/Services'
 import Steps from './components/Steps'
 import Employees from './components/Employees'
+import Testimonials from '@/01-positivus-landing-page/components/Testimonials'
 
 export default function Landing1() {
     return (
@@ -107,6 +108,7 @@ export default function Landing1() {
                         heading="Testimonials"
                         subheading="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"
                     />
+                    <Testimonials />
                 </section>
                 <section id="contact-us">
                     <SectionTitle

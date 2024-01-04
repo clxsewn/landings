@@ -1,0 +1,49 @@
+@use "@/01-positivus-landing-page/styles/breakpoints" as bp;
+
+.testimonials {
+  position: relative;
+  padding: 84px 0 68px 0;
+  margin-bottom: 140px;
+
+  color: white;
+
+  background-color: var(--dark-color);
+  border-radius: var(--border-radius);
+
+  overflow: hidden;
+
+  @include bp.mobi {
+    padding: 30px 0 30px 0;
+  }
+
+  .testimonials-list {
+    display: flex;
+    gap: 50px;
+
+    blockquote.testimonials-item {
+      flex-shrink: 0;
+
+      p.testimonials-text {
+        padding: 48px 52px;
+        margin-bottom: 48px;
+
+        border: 1px solid var(--green-color);
+        border-radius: var(--border-radius);
+
+        @include bp.mobi {
+          padding: 30px;
+        }
+      }
+
+      .testimonials-author {
+        margin-left: 80px;
+
+        font-size: 20px;
+
+        .testimonials-name {
+          color: var(--green-color);
+        }
+      }
+    }
+  }
+}
