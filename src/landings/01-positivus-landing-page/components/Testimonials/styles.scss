@@ -19,8 +19,11 @@
   .testimonials-list {
     display: flex;
     gap: 50px;
+    margin-bottom: 120px;
 
     blockquote.testimonials-item {
+      width: 606px;
+      max-width: calc(100% - 60px);
       flex-shrink: 0;
 
       p.testimonials-text {
@@ -44,6 +47,23 @@
           color: var(--green-color);
         }
       }
+    }
+  }
+
+  .testimonials-controls {
+    width: 600px;
+    max-width: calc(100% - 60px);
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      background-color: transparent;
+      border: none;
     }
   }
 }
