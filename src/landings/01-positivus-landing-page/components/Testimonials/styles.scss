@@ -1,7 +1,6 @@
 @use "@/01-positivus-landing-page/styles/breakpoints" as bp;
 
 .testimonials {
-  position: relative;
   padding: 84px 0 68px 0;
   margin-bottom: 140px;
 
@@ -10,16 +9,22 @@
   background-color: var(--dark-color);
   border-radius: var(--border-radius);
 
+  transition: padding var(--transition-timing);
   overflow: hidden;
 
   @include bp.mobi {
-    padding: 30px 0 30px 0;
+    padding: 30px 0 60px 0;
   }
 
   .testimonials-list {
+    transition: transform .5s, margin-bottom var(--transition-timing);
     display: flex;
     gap: 50px;
     margin-bottom: 120px;
+
+    @include bp.mobi {
+      margin-bottom: 60px;
+    }
 
     blockquote.testimonials-item {
       width: 606px;
@@ -64,6 +69,27 @@
     button {
       background-color: transparent;
       border: none;
+
+      &.testimonials-arrow:disabled {
+        opacity: .3;
+      }
+    }
+
+    .testimonials-navigation-stars {
+      display: flex;
+      gap: 19px;
+
+      button {
+        svg path {
+          fill: #fff;
+        }
+
+        &.selected {
+          svg path {
+            fill: var(--green-color);
+          }
+        }
+      }
     }
   }
 }
