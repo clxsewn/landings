@@ -24,8 +24,8 @@ export default function Testimonials() {
             Array.from(
                 document.querySelectorAll('blockquote.testimonials-item')
             )
-                .map((n) => n.offsetWidth)
-                .map((w, id) => {
+                .map((n: HTMLDivElement) => n.offsetWidth)
+                .map((w: number, id) => {
                     return (
                         wrapper!.current!.offsetWidth / 2 -
                         w / 2 -

@@ -41,6 +41,14 @@
         @include bp.mobi {
           padding: 30px;
         }
+
+        &::before {
+          content: "\201C";
+        }
+
+        &::after {
+          content: "\201D";
+        }
       }
 
       .testimonials-author {

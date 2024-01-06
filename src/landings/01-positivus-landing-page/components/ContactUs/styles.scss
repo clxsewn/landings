@@ -1,0 +1,136 @@
+@mixin borderBottomRadius {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.contact-us {
+  position: relative;
+  margin-bottom: 140px;
+  overflow: hidden;
+
+  .contact-us__inputs-wrapper {
+    width: 100%;
+    padding: 60px 0 40px 100px;
+
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+
+    background-color: var(--gray-color);
+
+    .contact-us__radios {
+      display: flex;
+      gap: 35px;
+      margin-bottom: 40px;
+
+      label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+
+        input {
+          position: absolute;
+          width: 0;
+          height: 0;
+          opacity: 0;
+
+          &:checked + .contact-us__checkmark {
+
+            position: relative;
+
+            &::after {
+              content: "";
+
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+
+              background-color: var(--green-color);
+            }
+          }
+
+          &:focus + .contact-us__checkmark {
+            border: 2px solid #000 !important;
+          }
+        }
+      }
+
+      .contact-us__checkmark {
+        width: 28px;
+        height: 28px;
+
+        display: inline-block;
+
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+    }
+
+    .contact-us__inputs {
+      width: 556px;
+      max-width: 100%;
+
+      label:has(input:required) > div::after,
+      label:has(textarea:required) > div::after,
+      {
+        content: "*";
+      }
+
+      label div {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+
+      input[type="text"], input[type="email"], textarea {
+        width: 100%;
+
+        padding: 18px 30px;
+        margin-bottom: 25px;
+
+        font-size: 18px;
+
+        border: 1px solid black;
+        border-radius: 14px;
+      }
+
+      textarea {
+        min-height: 108px;
+        max-height: 400px;
+
+        margin-bottom: 0;
+        resize: vertical;
+      }
+    }
+  }
+
+  .contact-us__submit-wrapper {
+    padding-left: 100px;
+    padding-bottom: 80px;
+
+    @include borderBottomRadius;
+
+    background-color: var(--gray-color);
+
+    input[type="submit"] {
+      width: 556px;
+      max-width: 100%;
+    }
+  }
+
+  .contact-us__illustration {
+    height: calc(100% - 125px);
+    max-width: calc(100% - 556px);
+    max-height: 724px;
+
+    position: absolute;
+
+    right: 0;
+    top: 50%;
+    transform: translate(46.9%, -50%);
+  }
+}

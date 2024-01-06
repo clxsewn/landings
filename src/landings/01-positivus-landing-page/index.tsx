@@ -16,6 +16,7 @@ import Services from './components/Services'
 import Steps from './components/Steps'
 import Employees from './components/Employees'
 import Testimonials from '@/01-positivus-landing-page/components/Testimonials'
+import ContactUs from '@/01-positivus-landing-page/components/ContactUs'
 
 export default function Landing1() {
     return (
@@ -115,6 +116,7 @@ export default function Landing1() {
                         heading="Contact&nbsp;Us"
                         subheading="Connect with Us: Let's Discuss Your Digital Marketing Needs"
                     />
+                    <ContactUs />
                 </section>
             </div>
             <footer>
