@@ -1,0 +1,73 @@
+@use '@/01-positivus-landing-page/styles/breakpoints' as bp;
+
+.case-studies__wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .case-studies__list {
+    padding: 70px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 4.8%;
+
+    background-color: var(--dark-color);
+    border-radius: var(--border-radius);
+
+    @include bp.mw(960px) {
+      padding: 0;
+      gap: 20px;
+      background-color: transparent;
+    }
+
+    .case-studies__item {
+      background-color: var(--dark-color);
+      color: #fff;
+
+      @include bp.mw(960px) {
+        padding: 42px 50px;
+        border-radius: var(--border-radius);
+        min-width: 350px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      .case-studies__lm {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+
+        span.case-studies__lm-text {
+          color: var(--green-color);
+        }
+
+        svg path {
+          fill: var(--green-color);
+        }
+      }
+    }
+
+    .case-studies__divider {
+      width: 1px;
+      border-left: 1px solid #fff;
+
+      // hiding last divider
+      &:last-child {
+        display: none;
+      }
+
+      @include bp.mw(960px) {
+        display: none;
+      }
+    }
+  }
+}

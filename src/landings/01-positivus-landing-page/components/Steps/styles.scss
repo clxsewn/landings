@@ -24,11 +24,16 @@ ol.steps-list {
 
     cursor: pointer;
 
+
     @include bp.mobi {
       padding: 30px;
       margin-bottom: 20px;
       grid-template-columns: min-content 1fr 30px;
       column-gap: 33px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
 
     &::before {

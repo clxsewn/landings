@@ -1,0 +1,25 @@
+@use '@/01-positivus-landing-page/styles/breakpoints' as bp;
+
+header { margin-bottom: 70px; };
+section#about-us { margin-bottom: 70px; }
+section#companies { margin-bottom: 140px; }
+section#services { margin-bottom: 120px; }
+section#proposal { margin-bottom: 160px; }
+section#case-studies { margin-bottom: 140px; }
+section#our-working-process { margin-bottom: 140px; }
+section#team { margin-bottom: 100px; }
+section#testimonials { margin-bottom: 140px; }
+section#contact-us { margin-bottom: 140px; }
+
+@include bp.mobi {
+  header { margin-bottom: 40px };
+  section#about-us { margin-bottom: 60px; }
+  section#companies { margin-bottom: 60px; }
+  section#services { margin-bottom: 66px; }
+  section#proposal { margin-bottom: 50px; }
+  section#case-studies { margin-bottom: 60px; }
+  section#our-working-process { margin-bottom: 60px; }
+  section#team { margin-bottom: 60px; }
+  section#testimonials { margin-bottom: 60px; }
+  section#contact-us { margin-bottom: 90px; }
+}

@@ -1,10 +1,9 @@
 #companies {
   display: flex;
+  justify-content: space-between;
   row-gap: 26px;
   column-gap: 30px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 140px;
 
   @media screen and (max-width: 972px) {
     justify-content: space-evenly;
@@ -15,7 +14,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
-    margin-bottom: 67px;
   }
 
   @media screen and (max-width: 530px) {

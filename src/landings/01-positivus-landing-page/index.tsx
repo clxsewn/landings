@@ -1,5 +1,6 @@
 import './styles/globals.scss'
 import './styles/main.scss'
+import './styles/sectionMargins.scss'
 
 import logo from './assets/logo.svg'
 import burgerMenu from './assets/burder-menu.svg'
@@ -15,8 +16,9 @@ import Companies from './components/Companies'
 import Services from './components/Services'
 import Steps from './components/Steps'
 import Employees from './components/Employees'
-import Testimonials from '@/01-positivus-landing-page/components/Testimonials'
-import ContactUs from '@/01-positivus-landing-page/components/ContactUs'
+import Testimonials from './components/Testimonials'
+import ContactUs from './components/Contact-Us'
+import CaseStudies from '@/01-positivus-landing-page/components/Case-Studies'
 
 export default function Landing1() {
     return (
@@ -86,6 +88,7 @@ export default function Landing1() {
                         heading="Case&nbsp;Studies"
                         subheading="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
                     />
+                    <CaseStudies />
                 </section>
                 <section id="our-working-process">
                     <SectionTitle
