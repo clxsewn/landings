@@ -43,7 +43,7 @@ export default function ContactUs() {
                 </div>
             </div>
             <div className="contact-us__submit-wrapper">
-                <input type="submit" className="btn" />
+                <input type="submit" className="btn" value="Send message" />
             </div>
             <img
                 className="contact-us__illustration unselectable"

@@ -24,7 +24,7 @@ export default function Testimonials() {
             Array.from(
                 document.querySelectorAll('blockquote.testimonials-item')
             )
-                .map((n: HTMLDivElement) => n.offsetWidth)
+                .map((n) => n.offsetWidth)
                 .map((w: number, id) => {
                     return (
                         wrapper!.current!.offsetWidth / 2 -
@@ -74,7 +74,7 @@ export default function Testimonials() {
                     {testimonials.map((t, id) => (
                         <button
                             key={t.id}
-                            className={selected === id ? 'selected' : ''}
+                            disabled={selected === id}
                             onClick={() => set(id)}
                         >
                             <svg

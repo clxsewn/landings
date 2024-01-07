@@ -77,6 +77,8 @@ p {
   border: none;
   user-select: none;
 
+  transition: all .5s;
+
   &:hover {
     background-color: #333341;
   }

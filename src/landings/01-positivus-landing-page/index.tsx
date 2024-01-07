@@ -100,9 +100,6 @@ export default function Landing1() {
                         subheading="Meet the skilled and experienced team behind our successful digital marketing strategies"
                     />
                     <Employees />
-                    <div className="btn-wrapper">
-                        <button className="btn">See all team</button>
-                    </div>
                 </section>
                 <section id="testimonials">
                     <SectionTitle

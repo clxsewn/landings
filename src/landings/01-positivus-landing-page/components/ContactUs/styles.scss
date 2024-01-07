@@ -1,3 +1,5 @@
+@use '@/01-positivus-landing-page/styles/breakpoints' as bp;
+
 @mixin borderBottomRadius {
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
@@ -10,17 +12,31 @@
 
   .contact-us__inputs-wrapper {
     width: 100%;
-    padding: 60px 0 40px 100px;
+    padding: 60px 100px 40px 100px;
 
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
 
     background-color: var(--gray-color);
 
+    @include bp.mw(700px) {
+      padding: 40px 30px 50px;
+    }
+
+    @include bp.mobi {
+      margin-bottom: 30px;
+      border-bottom-left-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+    }
+
     .contact-us__radios {
       display: flex;
       gap: 35px;
       margin-bottom: 40px;
+
+      @include bp.mobi {
+        justify-content: center;
+      }
 
       label {
         display: flex;
@@ -75,6 +91,10 @@
       width: 556px;
       max-width: 100%;
 
+      @include bp.mw(700px) {
+        width: 100%;
+      }
+
       label:has(input:required) > div::after,
       label:has(textarea:required) > div::after,
       {
@@ -109,12 +129,20 @@
   }
 
   .contact-us__submit-wrapper {
-    padding-left: 100px;
-    padding-bottom: 80px;
+    padding: 0 100px 80px;
 
     @include borderBottomRadius;
 
     background-color: var(--gray-color);
+
+    @include bp.mw(700px) {
+      padding: 0 30px 80px;
+    }
+
+    @include bp.mobi {
+      background-color: transparent;
+      padding: 0;
+    }
 
     input[type="submit"] {
       width: 556px;
@@ -132,5 +160,9 @@
     right: 0;
     top: 50%;
     transform: translate(46.9%, -50%);
+
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
   }
 }

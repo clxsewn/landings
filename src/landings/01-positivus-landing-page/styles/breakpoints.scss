@@ -1,5 +1,11 @@
+@mixin mw($px) {
+  @media screen and (max-width: $px){
+    @content;
+  }
+}
+
 @mixin mobi {
-  @media only screen and (max-width: 599px){
+  @media screen and (max-width: 599px){
     @content;
   }
 }
