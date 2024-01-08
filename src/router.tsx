@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import LandingLayout from './pages/LandingLayout.tsx'
 import Main from './pages/Main.tsx'
+import routes from './routes'
 
 export const pathToLandings = '/p/'
 
@@ -10,8 +11,9 @@ export const router = createBrowserRouter([
         element: <Main />,
     },
     {
-        path: `${pathToLandings}:id`,
+        path: pathToLandings,
         element: <LandingLayout />,
+        children: routes,
     },
     {
         path: '*',

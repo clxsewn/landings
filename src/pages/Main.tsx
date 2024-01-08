@@ -1,12 +1,10 @@
-import { pagesPaths } from '../data.tsx'
-import Card from '../components/Card'
+import { Link } from 'react-router-dom'
 
 export default function Main() {
     return (
         <div>
-            {pagesPaths.map((p) => (
-                <Card key={p} path={p} />
-            ))}
+            <Link to="/p/01-positivus">01</Link>
+            <Link to="/p/02-prohouse">02</Link>
         </div>
     )
 }

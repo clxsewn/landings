@@ -1,7 +1,7 @@
-import './styles.scss'
-import { pagesNum, pagesPaths } from '../../data.tsx'
 import { Link } from 'react-router-dom'
+import { pagesNum, pagesPaths } from '../../routes/data.tsx'
 import { pathToLandings } from '../../router.tsx'
+import './styles.scss'
 
 function getPagePathById(id: number): string {
     if (id >= pagesNum) return pathToLandings + pagesPaths[0]
