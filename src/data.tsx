@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
-import Landing1 from './landings/01-positivus-landing-page'
-import Landing2 from './landings/Land2'
+import Landing1 from './landings/01-positivus'
+import Landing2 from './landings/02-prohouse'
 import Landing3 from './landings/Land3'
 
 interface Pages {
@@ -11,12 +11,12 @@ interface Pages {
 }
 
 export const pages: Pages = {
-    'positivus-landing-page': {
-        title: 'Positivus Landing Page',
+    '01-positivus': {
+        title: 'Positivus',
         element: <Landing1 />,
     },
-    'land-2': {
-        title: 'Landing 2',
+    '02-prohouse': {
+        title: 'ProHouse',
         element: <Landing2 />,
     },
     'land-3': {

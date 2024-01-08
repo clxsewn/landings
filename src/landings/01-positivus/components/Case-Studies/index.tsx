@@ -1,7 +1,6 @@
 import { Fragment } from 'react'
 import './styles.scss'
 import { caseStudies } from './data.ts'
-import arrow from '../../assets/'
 
 export default function CaseStudies() {
     return (

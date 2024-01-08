@@ -7,7 +7,7 @@ export default function EmployeeCard({
     name,
     position,
     experience,
-    img,
+    // img,
     linkedin,
 }: TEmployee) {
     return (

@@ -18,7 +18,7 @@ import Steps from './components/Steps'
 import Employees from './components/Employees'
 import Testimonials from './components/Testimonials'
 import ContactUs from './components/Contact-Us'
-import CaseStudies from '@/01-positivus-landing-page/components/Case-Studies'
+import CaseStudies from '@/01-positivus/components/Case-Studies'
 
 export default function Landing1() {
     return (

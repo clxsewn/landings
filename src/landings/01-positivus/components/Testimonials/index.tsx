@@ -1,10 +1,7 @@
 import './styles.scss'
 import { testimonials } from './data.ts'
 import { useEffect, useRef, useState } from 'react'
-import {
-    useControlState,
-    useWindowWidth,
-} from '@/01-positivus-landing-page/hooks.ts'
+import { useControlState, useWindowWidth } from '@/01-positivus/hooks.ts'
 
 export default function Testimonials() {
     const list = useRef<HTMLDivElement>(null)
@@ -20,11 +17,13 @@ export default function Testimonials() {
     const [offsets, setOffsets] = useState<number[]>([])
 
     useEffect(() => {
+        const divs: HTMLDivElement[] = Array.from(
+            document.querySelectorAll('blockquote.testimonials-item')
+        )
+
         setOffsets(
-            Array.from(
-                document.querySelectorAll('blockquote.testimonials-item')
-            )
-                .map((n) => n.offsetWidth)
+            divs
+                .map((n: HTMLDivElement) => n.offsetWidth)
                 .map((w: number, id) => {
                     return (
                         wrapper!.current!.offsetWidth / 2 -

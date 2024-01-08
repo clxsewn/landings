@@ -1,0 +1,44 @@
+@use '@/02-prohouse/styles/breakpoints' as bp;
+
+:root {
+  --container-width: min(1180px, calc(100% - 32px));
+}
+
+#landing {
+  font-family: 'RF-Dewi-Extended', sans-serif;
+}
+
+body {
+  color: #121420;
+  --grey-color: #545B79;
+
+  &.dark {
+    color: #fff;
+    --grey-color: #5E6379;
+  }
+}
+
+// TYPOGRAPHY
+
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 20px; }
+h4 { font-size: 20px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+p  { font-size: 18px; }
+
+@include bp.mobi {
+  h1 { font-size: 36px; }
+  h2 { font-size: 22px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 20px; }
+  h5 { font-size: 20px; }
+  h6 { font-size: 20px; }
+  p  { font-size: 16px; }
+}
+
+.container {
+  margin: 0 auto;
+  width: var(--container-width);
+}
