@@ -13,7 +13,7 @@
     background-color: $headingBgColor;
   }
 
-  .learn-more {
+  .learnMore {
     p {
       color: $circleColor;
     }
@@ -28,7 +28,7 @@
   }
 }
 
-#services-list {
+.servicesList {
   width: 100%;
 
   display: grid;
@@ -64,7 +64,7 @@
       cursor: pointer;
     }
 
-    .heading-wrapper {
+    .headingWrapper {
       max-width: 224px;
 
       @include bp.mobi {
@@ -93,11 +93,15 @@
       }
     }
 
-    span.learn-more {
+    span.learnMore {
       height: min-content;
 
       grid-column: 1 / 2;
       grid-row: 2 / 3;
+
+      display: flex;
+      align-items: center;
+      gap: 15px;
 
       align-self: end;
 
@@ -133,15 +137,15 @@
 
     // THEMES
 
-    &.service-green {
+    &.green {
       @include serviceTheme(var(--green-color), black, white, var(--dark-color), var(--green-color), true);
     }
 
-    &.service-gray {
+    &.gray {
       @include serviceTheme(var(--gray-color), black, var(--green-color), var(--dark-color), var(--green-color), true);
     }
 
-    &.service-dark {
+    &.dark {
       @include serviceTheme(var(--dark-color), black, white, white, black, false);
     }
   }
