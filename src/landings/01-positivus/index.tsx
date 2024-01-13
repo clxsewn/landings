@@ -22,7 +22,7 @@ import CaseStudies from '@/01-positivus/components/Case-Studies'
 
 export default function Landing1() {
     return (
-        <>
+        <div id="variables-wrapper">
             <div className="container">
                 <header id="header">
                     <div id="logo">
@@ -188,6 +188,6 @@ export default function Landing1() {
                     </div>
                 </div>
             </footer>
-        </>
+        </div>
     )
 }

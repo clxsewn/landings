@@ -1,13 +1,13 @@
 @use '@/01-positivus/styles/breakpoints' as bp;
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
 
-#landing * {
+* {
   font-family: 'Space Grotesk', sans-serif;
 }
 
 // VARIABLES
 
-:root {
+#variables-wrapper {
   --green-color: #b9ff66;
   --dark-color: #191a23;
   --gray-color: #f3f3f3;
