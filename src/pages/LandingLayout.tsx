@@ -10,9 +10,11 @@ export default function LandingLayout() {
         <>
             <Manipulator id={id} />
             <div id={pages[id].prefix}>
-                <Suspense fallback={<div>Loading...</div>}>
-                    <Outlet />
-                </Suspense>
+                <div id="variables">
+                    <Suspense fallback={<div>Loading...</div>}>
+                        <Outlet />
+                    </Suspense>
+                </div>
             </div>
         </>
     )
