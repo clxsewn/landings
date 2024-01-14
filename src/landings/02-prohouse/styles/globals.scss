@@ -1,14 +1,12 @@
 @use '@/02-prohouse/styles/breakpoints' as bp;
 
-:root {
-  --container-width: min(1180px, calc(100% - 32px));
-}
-
-#landing {
+* {
   font-family: 'RF-Dewi-Extended', sans-serif;
 }
 
-body {
+#variables {
+  --container-width: min(1180px, calc(100% - 32px));
+
   color: #121420;
   --grey-color: #545B79;
 

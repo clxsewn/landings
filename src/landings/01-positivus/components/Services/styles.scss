@@ -13,7 +13,7 @@
     background-color: $headingBgColor;
   }
 
-  .learnMore {
+  .learn-more {
     p {
       color: $circleColor;
     }
@@ -28,7 +28,7 @@
   }
 }
 
-.servicesList {
+.services-list {
   width: 100%;
 
   display: grid;
@@ -64,7 +64,7 @@
       cursor: pointer;
     }
 
-    .headingWrapper {
+    .heading-wrapper {
       max-width: 224px;
 
       @include bp.mobi {
@@ -93,7 +93,7 @@
       }
     }
 
-    span.learnMore {
+    span.learn-more {
       height: min-content;
 
       grid-column: 1 / 2;
