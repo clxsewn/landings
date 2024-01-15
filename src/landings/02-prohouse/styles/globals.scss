@@ -40,3 +40,19 @@ p  { font-size: 18px; }
   margin: 0 auto;
   width: var(--container-width);
 }
+
+.btn {
+  background-color: #356DF6;
+}
+
+.btn-32 {
+  padding: 11.5px 32px 13.5px;
+}
+
+.btn-24 {
+  padding: 8.5px 24px 10.5px;
+}
+
+.btn-14 {
+  padding: 7px 14px;
+}
