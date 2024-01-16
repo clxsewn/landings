@@ -1,10 +1,41 @@
-.header__left {
-  .leader__logo {
-    display: flex;
-    gap: 4px;
+header {
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    svg path {
-      stroke: #121420;
+  .header__left {
+    display: flex;
+    gap: 59px;
+
+    .header__logo {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      svg path {
+        stroke: var(--color-black-200);
+      }
+
+      span {
+        color: var(--color-black-200);
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+
+    nav {
+      display: flex;
+      gap: 40px;
+
+      a {
+        color: var(--color-black-200);
+        text-decoration: none;
+
+        &:visited {
+          color: var(--color-black-200);
+        }
+      }
     }
   }
 }
