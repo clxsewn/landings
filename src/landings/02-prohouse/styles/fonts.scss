@@ -1,23 +1,49 @@
 @font-face {
+  font-family: "RF-Dewi";
+  src: url("../fonts/RFDewi-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RF-Dewi";
+  src: url("../fonts/RFDewi-Semibold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "RF-Dewi";
+  src: url("../fonts/RFDewi-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RF-Dewi";
+  src: url("../fonts/RFDewi-Light.ttf");
+  font-weight: 300;
+}
+
+// Extended
+
+@font-face {
   font-family: "RF-Dewi-Extended";
-  src: url("../fonts/RFDewiExpanded-Bold.ttf");
+  src: url("../fonts/RFDewiExtended-Bold.ttf");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "RF-Dewi-Extended";
-  src: url("../fonts/RFDewiExpanded-Semibold.ttf");
+  src: url("../fonts/RFDewiExtended-Semibold.ttf");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "RF-Dewi-Extended";
-  src: url("../fonts/RFDewiExpanded-Regular.ttf");
+  src: url("../fonts/RFDewiExtended-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "RF-Dewi-Extended";
-  src: url("../fonts/RFDewiExpanded-Light.ttf");
+  src: url("../fonts/RFDewiExtended-Light.ttf");
   font-weight: 300;
 }
