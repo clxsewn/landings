@@ -30,11 +30,55 @@ header {
       gap: 40px;
 
       a {
+        display: flex;
+        align-items: center;
+
         color: var(--color-black-200);
         text-decoration: none;
 
         &:visited {
           color: var(--color-black-200);
+        }
+      }
+    }
+  }
+}
+
+.dark {
+  background-color: var(--color-black-200);
+
+  header {
+
+
+    .header__left {
+
+
+      .header__logo {
+
+
+        svg path {
+          stroke: #fff;
+        }
+
+        span {
+          color: #fff;
+        }
+      }
+
+      nav {
+        display: flex;
+        gap: 40px;
+
+        a {
+          display: flex;
+          align-items: center;
+
+          color: #fff;
+          text-decoration: none;
+
+          &:visited {
+            color: #fff;
+          }
         }
       }
     }
