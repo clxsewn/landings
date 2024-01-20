@@ -2,6 +2,7 @@ import './styles/main.scss'
 import './styles/globals.scss'
 import './styles/fonts.scss'
 import Logo from '@/02-prohouse/components/Logo.tsx'
+import Card from './components/Card'
 
 export default function Landing2() {
     return (
@@ -22,6 +23,12 @@ export default function Landing2() {
                     <button className="btn btn-24">Connect Wallet</button>
                 </div>
             </header>
+            <Card
+                name="Cottage «Forrest 1»"
+                subname="Red Oak Realty"
+                time="09h : 45m : 08s"
+                eth="29.71"
+            />
         </>
     )
 }
