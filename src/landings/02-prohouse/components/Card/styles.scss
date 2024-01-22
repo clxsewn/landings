@@ -1,8 +1,24 @@
 .card {
   width: 280px;
   height: 362px;
+  padding: 12px;
 
   &:hover {
     box-shadow: 5px 20px 60px 0 rgba(0, 0, 0, .1);
+  }
+
+  .card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+
+    p.p2 {
+      color: var(--color-black-200);
+      font-weight: bold;
+    }
+
+    p.p4 {
+      color: var(--color-grey-100);
+    }
   }
 }
