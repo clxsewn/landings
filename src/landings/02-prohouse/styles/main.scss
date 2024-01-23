@@ -1,3 +1,11 @@
+#landing-wrapper {
+  background-color: #F3F4F6;
+}
+
+.dark #landing-wrapper {
+  background-color: var(--color-black-200);
+}
+
 header {
   height: 78px;
   display: flex;
