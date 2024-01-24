@@ -44,8 +44,18 @@ p  { font-size: 18px; }
   p  { font-size: 16px; }
 }
 
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @include bp.mobi {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .container {
-  margin: 0 auto;
+  margin: unset auto;
   width: var(--container-width);
 }
 

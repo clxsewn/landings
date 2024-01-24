@@ -23,12 +23,15 @@ export default function Landing2() {
                     <button className="btn btn-24">Connect Wallet</button>
                 </div>
             </header>
-            <Card
-                name="Cottage «Forrest 1»"
-                subname="Red Oak Realty"
-                time="09h : 45m : 08s"
-                eth="29.71"
-            />
+            <main>
+                <section id="about">About</section>
+                <section id="companies">Companies</section>
+                <section id="discover">Discover</section>
+                <section id="developers">Developers</section>
+                <section id="join">Join</section>
+                <section id="subscribe">Subscribe</section>
+            </main>
+            <footer></footer>
         </>
     )
 }
