@@ -26,8 +26,8 @@
 
 // TYPOGRAPHY
 
-h1 { font-size: 48px; }
-h2 { font-size: 36px; }
+h1 { font-size: 48px; font-family: 'RF-Dewi-Extended', sans-serif; }
+h2 { font-size: 36px; font-family: 'RF-Dewi-Extended', sans-serif; }
 h3 { font-size: 20px; }
 h4 { font-size: 20px; }
 h5 { font-size: 20px; }
@@ -55,7 +55,7 @@ section {
 }
 
 .container {
-  margin: unset auto;
+  margin: 0 auto;
   width: var(--container-width);
 }
 

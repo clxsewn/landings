@@ -24,7 +24,33 @@ export default function Landing2() {
                 </div>
             </header>
             <main>
-                <section id="about">About</section>
+                <section id="hero" className="container">
+                    <div className="main">
+                        <h1 className="title">
+                            Future of real estate investing
+                        </h1>
+                        <p className="text">
+                            Our real estate is virtual property you can purchase
+                            on a metaverse platform
+                        </p>
+                        <button className="btn btn-32">Explore</button>
+                    </div>
+                    <div className="features">
+                        <div className="item">
+                            <h2>12K+</h2>
+                            <p>properties</p>
+                        </div>
+                        <div className="item">
+                            <h2>10K+</h2>
+                            <p>auction</p>
+                        </div>
+                        <div className="item">
+                            <h2>12K+</h2>
+                            <p>developers</p>
+                        </div>
+                    </div>
+                    <div className="cards"></div>
+                </section>
                 <section id="companies">Companies</section>
                 <section id="discover">Discover</section>
                 <section id="developers">Developers</section>

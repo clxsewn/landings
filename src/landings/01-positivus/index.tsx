@@ -162,7 +162,7 @@ export default function Landing1() {
                     <div id="footer-middle">
                         <div id="footer-contacts-wrapper">
                             <h4 className="bgc-green">Contact&nbsp;us</h4>
-                            <div id="contact-info">
+                            <address id="contact-info">
                                 <a href="mailto:info@positivus.com">
                                     <p>Email: info@positivus.com</p>
                                 </a>
@@ -174,7 +174,7 @@ export default function Landing1() {
                                     <br />
                                     Moonstone City, Stardust State 12345
                                 </p>
-                            </div>
+                            </address>
                         </div>
                         <div id="subscription-form">
                             <input type="email" placeholder="Email" />
