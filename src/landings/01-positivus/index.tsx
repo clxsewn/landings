@@ -50,7 +50,7 @@ export default function Landing1() {
                         succeed online through a range of services including
                         SEO, PPC, social media marketing, and content creation.
                     </p>
-                    <button className="btn">Book a consulting</button>
+                    <button className="btn">Book a consultation</button>
                     <img
                         src={illustration1}
                         alt="Illustration"
@@ -67,7 +67,7 @@ export default function Landing1() {
                 </section>
                 <section id="proposal">
                     <div id="proposal__left">
-                        <h3>Let's make this happen</h3>
+                        <h3>Let's make things happen</h3>
                         <p>
                             Contact us today to learn more about how our digital
                             marketing services can help your business grow and

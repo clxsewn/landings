@@ -9,7 +9,7 @@ ol.steps-list {
   }
 
   .steps-item-wrapper {
-    padding: 41px 60px;
+    padding: 40px 60px;
     margin-bottom: 30px;
 
     display: grid;
@@ -23,7 +23,6 @@ ol.steps-list {
     counter-increment: count 1;
 
     cursor: pointer;
-
 
     @include bp.mobi {
       padding: 30px;
@@ -41,6 +40,7 @@ ol.steps-list {
 
       font-family: 'Space Grotesk', sans-serif;
       font-size: 60px;
+      line-height: 77px;
       font-weight: 600;
       font-variant-numeric: normal;
 

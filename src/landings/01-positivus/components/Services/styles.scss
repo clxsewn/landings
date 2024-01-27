@@ -1,12 +1,7 @@
 @use '@/01-positivus/styles/breakpoints' as bp;
 
-@mixin serviceTheme($bgColor, $headingColor, $headingBgColor, $circleColor, $pathColor, $border) {
+@mixin serviceTheme($bgColor, $headingColor, $headingBgColor, $circleColor, $pathColor) {
   background-color: $bgColor;
-
-  @if $border == true {
-    border: 1px solid #000;
-    border-bottom: 5px solid #000;
-  }
 
   h3 {
     color: $headingColor;
@@ -33,7 +28,8 @@
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  gap: 40px;
+  row-gap: 39px;
+  column-gap: 40px;
 
   @include bp.mobi {
     grid-template-columns: 1fr;
@@ -51,8 +47,11 @@
     justify-content: space-between;
     padding: 50px;
 
+    border: 1px solid #191A23;
+    box-shadow: 0 5px 0 0 #191A23;
     border-radius: var(--border-radius);
     transition: all .1s;
+
 
     @include bp.mobi {
       grid-template-columns: 1fr 148px;
@@ -60,7 +59,7 @@
 
     &:hover {
       transform: translateY(-10px);
-      box-shadow: 0 10px 0 #000;
+      box-shadow: 0 15px 0 0 #191A23 !important;
       cursor: pointer;
     }
 
@@ -138,15 +137,15 @@
     // THEMES
 
     &.green {
-      @include serviceTheme(var(--green-color), black, white, var(--dark-color), var(--green-color), true);
+      @include serviceTheme(var(--green-color), black, white, var(--dark-color), var(--green-color));
     }
 
     &.gray {
-      @include serviceTheme(var(--gray-color), black, var(--green-color), var(--dark-color), var(--green-color), true);
+      @include serviceTheme(var(--gray-color), black, var(--green-color), var(--dark-color), var(--green-color));
     }
 
     &.dark {
-      @include serviceTheme(var(--dark-color), black, white, white, black, false);
+      @include serviceTheme(var(--dark-color), black, white, white, black);
     }
   }
 }

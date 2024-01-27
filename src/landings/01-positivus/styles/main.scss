@@ -14,7 +14,7 @@ header#header {
   #logo {
     display: flex;
     flex-direction: row;
-    gap: 14px;
+    gap: 10px;
 
     align-items: center;
 
@@ -113,6 +113,11 @@ header#header {
 
   p {
     grid-column: 1 / 2;
+
+    display: block;
+    width: 498px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   button {
