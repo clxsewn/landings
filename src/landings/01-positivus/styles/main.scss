@@ -34,7 +34,7 @@ header#header {
   nav {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 41px;
     font-size: 20px;
 
     list-style: none;
@@ -74,8 +74,9 @@ header#header {
       }
 
       &.outlined {
-        padding: 20px 35px;
+        padding: 19px 34px;
 
+        line-height: 28px;
         border: 1px solid #000;
         border-radius: 14px;
       }

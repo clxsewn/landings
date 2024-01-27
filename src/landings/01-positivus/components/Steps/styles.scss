@@ -2,6 +2,8 @@
 
 
 ol.steps-list {
+  margin-left: 3px;
+  margin-right: 3px;
   counter-reset: count 0;
 
   &, * {
@@ -9,7 +11,7 @@ ol.steps-list {
   }
 
   .steps-item-wrapper {
-    padding: 40px 60px;
+    padding: 40px 56px 40px 60px;
     margin-bottom: 30px;
 
     display: grid;
@@ -60,15 +62,8 @@ ol.steps-list {
 
     button {
       width: 58px;
-      height: 58px;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-
-      border: 1px solid #000;
-      border-radius: 50%;
+      height: 59px;
+      border: none;
 
       @include bp.mobi {
         width: 30px;
@@ -93,6 +88,7 @@ ol.steps-list {
     p {
       grid-column: 1 / 4;
       grid-row: 3 / 4;
+      margin-bottom: 13px;
     }
 
     hr, p {
