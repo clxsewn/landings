@@ -17,7 +17,7 @@ ol.steps-list {
     display: grid;
     grid-template-columns: min-content 1fr 58px;
     row-gap: 30px;
-    column-gap: 25px;
+    column-gap: 24px;
     align-items: center;
 
     background-color: var(--gray-color);
@@ -63,6 +63,7 @@ ol.steps-list {
     button {
       width: 58px;
       height: 59px;
+      background-color: transparent;
       border: none;
 
       @include bp.mobi {

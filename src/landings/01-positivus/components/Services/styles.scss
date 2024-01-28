@@ -28,7 +28,7 @@
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  row-gap: 39px;
+  row-gap: 40px;
   column-gap: 40px;
 
   @include bp.mobi {
@@ -45,7 +45,7 @@
     display: grid;
     grid-template-columns: 1fr 210px;
     justify-content: space-between;
-    padding: 50px;
+    padding: 49px;
 
     border: 1px solid #191A23;
     box-shadow: 0 5px 0 0 #191A23;
@@ -77,9 +77,12 @@
     h3 {
       height: min-content;
       padding: 0 7px;
+
       display: inline;
       border-radius: 7px;
-      line-height: 39px;
+
+      font-weight: 500;
+      line-height: normal;
 
       grid-column: 1 / 2;
       grid-row: 1 / 2;
@@ -112,9 +115,11 @@
         }
       }
 
-      @media only screen and (max-width: 460px) {
-        p {
-          display: none;
+      p {
+        font-size: 20px;
+
+        @media only screen and (max-width: 460px) {
+            display: none;
         }
       }
     }
